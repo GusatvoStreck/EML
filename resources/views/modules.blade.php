@@ -28,7 +28,6 @@
     <a href="/modulos/acordes/tetrade" class="modules-link"> <div class="modules-content">Tétrade</div></a>    
     <a href="/modulos/acordes/cifras" class="modules-link"> <div class="modules-content">Cifras</div></a>
     <a href="/modulos/acordes/formacaoacordes" class="modules-link"> <div class="modules-content">Formação de acordes</div></a>
-    <a href="/modulos/acordes/nomes" class="modules-link"><div class="modules-content">Nomes dos acordes</div></a>
 
     </div>
 </div>
