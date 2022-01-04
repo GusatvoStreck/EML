@@ -1,0 +1,322 @@
+/* General */ 
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+header{
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+.row{
+    margin:0;
+}
+.container-fluid {
+    padding:0;
+}
+
+.btn-primary{
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+/* navbar */
+#navbar img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+#navbar{
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 5px 0px;
+}
+
+#navbar a{
+    font-size: 21px;
+    color:#757575;
+    margin-right: 10px;
+}
+
+#navbar a:hover{
+    color:#f2a340;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* search container */
+
+#search-container {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* teachers list */
+#teachers-container{
+    padding: 50px;
+}
+#teachers-container h2{
+    margin-bottom: 10px;
+}
+
+#teachers-container .subtitle{
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+
+#cards-container {
+    display:flex;
+}
+
+#cards-container img{
+    padding: 5px;
+    height: 375px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#cards-container .card{
+    flex: 1 1 0;
+    min-width: 18%;
+    max-width: 18%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 10px;
+}
+
+.card .card-name{
+    font-size: 20px;
+    color: #212121;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.card-price{
+    margin-left: 5px;
+}
+
+.card-city{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #757575;
+
+}
+
+.card-rating{
+    margin-left: 5px;
+}
+
+/* Teacher page */
+#image-container,#info-container{
+    margin-top:30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+    min-width: 35%;
+    max-width: 600px;
+    max-height: 400px;
+    float:right;
+}
+
+
+#info-container h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p{
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+}
+
+#description-container{
+    margin-top: 10px;
+    text-align: left;
+}
+
+#info-container h3,#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size:20px;
+    color: #F2A340;
+    margin-right: 5px;
+}
+
+#item-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#item-list li{
+    display: flex;
+}
+
+.title {
+    font-weight: 800;
+    margin-top: 2%;
+}
+/* Create Page */
+
+#teacher-create-container h1{
+    color:#F2A340;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.form-group{
+    margin-top: 2px;
+}
+.form-group label{
+    margin-top: 5px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: #353E48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+/* Content */
+
+#modules-container {
+    display: flex;
+}
+
+#modules-container .card {
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+    width: 15%;
+    height: 300px;
+}
+
+.module-name{
+    padding: 10px;
+    margin: 5px;
+    background-color: #c07e03;
+    border-radius: 9px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.modules-content{
+    margin-top: 10px;
+    padding: 0;
+}
+
+.modules-link{
+    text-decoration: none;
+    color: #353E48;
+    font-weight: 500;
+}
+
+.modules-link:hover{
+    color: #c28008;
+}
+
+/* edit */
+
+.img-preview{
+    width: 100px;
+    margin-top: 10px;
+    margin-left: -120px;
+}
+
+form .deusdoceufunciona{
+    margin-top: 10px;
+}
+
+/* modulo pag */
+
+.modulo-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #c28008;
+}
+
+.modulo-subtitle{
+    font-size: 32px;
+    font-weight: 600;
+    color: #c28008;
+}
+
+.modulo-text{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.important-word{
+    text-decoration: none;
+    color: #F2A340;
+}
+
+.important-word:hover{
+    color: #353E48;
+}
+
+.modulo-img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.modulo-table td{
+    width: 100px;
+}
+
+.modulo-table th{
+    width: 100px;
+    font-size: 20px;
+    color: #f2a340;
+}
+
+.modulo-subtitle2{
+    font-size: 26px;
+    color: #c28008;
+    font-weight: 600;
+}
