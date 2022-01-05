@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-use app\Http\Controllers\EventController;
+use App\http\Controllers\EventController;
 
 Route::get('/',[EventController::class, 'index']);
 
