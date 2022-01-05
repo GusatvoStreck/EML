@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+use app\Http\Controllers\EventController;
+
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
