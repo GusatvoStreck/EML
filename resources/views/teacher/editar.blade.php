@@ -42,9 +42,6 @@
         <div class="form-group">
             <input type="checkbox" name="addprices[]" value="Alimentação"> Custo de alimentação 
         </div>
-        <div class="form-group">
-            Outros: <input type="text" name="addprices[]" value="">
-        </div>
     </div>
 
     <div class="form-group">
@@ -108,9 +105,6 @@
         </div>
         <div class="form-group">
             <input type="checkbox" name="instruments[]" value="Flauta"> Flauta
-        </div>
-        <div class="form-group">
-            Outros: <input type="text" name="instruments[]" value=""> 
         </div>
     </div>
     

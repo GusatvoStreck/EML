@@ -3,13 +3,13 @@
 @section('content')
 
 <div id="search-container" class="col-md-12">
-    <h1>Busque por cidades</h1>
+    <h1 style="color: #c28008">Busque por cidades ou instrumentos</h1>
     <form action="/busca" method="GET">
         <input type="text" id="search" name="search" class="form-control" placheholder="Procurar...">
     </form>
 </div>
 <div id="teachers-container" class="col-md-12">
-    <h2>Veja os professores disponiveis</h2>
+    <h2 style="color: #f2a340">Veja os professores disponiveis</h2>
     <div id="cards-container" class="row">
         @foreach($teachers as $t)
             <div class="card col-md-3">

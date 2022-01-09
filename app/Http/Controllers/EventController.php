@@ -25,7 +25,16 @@ class EventController extends Controller
                 ['city', 'like', '%'.$search.'%']
 
             ])->get();
-        }
+            if(count($teachers)==0){
+                $teachers = Teacher::where([
+                ['instruments', 'like', '%'.$search.'%']
+
+            ])->get();
+            if($teachers == "Violão"){
+                $teachers = "Violao";
+            }    
+        }}
+        
         else {
             $teachers = Teacher::all();
         }
@@ -66,9 +75,7 @@ class EventController extends Controller
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extention;
 
             $request->image->move(public_path('img/teachers'), $imageName);
-
             $teacher->image = $imageName;
-
         }
         else{
             $teacher->image = "perfil.png";
@@ -130,11 +137,12 @@ class EventController extends Controller
 
         }
         else{
-            $data['image'] = "perfil.png";
+                $data['image'] = "perfil.png";
+            
         }
 
         Teacher::findorFail($request->id)->update($data);
 
-        return redirect('/')->with('msg', 'Evento editado com sucesso');
+        return redirect('/');
     }
 }
