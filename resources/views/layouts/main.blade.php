@@ -20,7 +20,7 @@
                             <a href="/" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/modulos" class="nav-link">Modulos</a>
+                            <a href="/modulos" class="nav-link">Módulos</a>
                         </li>
                         <li class="nav-item">
                             <a href="/busca" class="nav-link">Buscar professores</a>
