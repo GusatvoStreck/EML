@@ -66,6 +66,13 @@ class EventController extends Controller
         else{
             $teacher->biography = $request->biography;
         }
+        //addprices null
+        if($request->addprices == "null"){
+            $teacher->addprices = null;
+        }
+        else{
+            $teacher->addprices = $request->addprices;
+        }
         //image upload
         if($request->hasfile('image') && $request->file('image')->isValid()){
             
@@ -139,6 +146,9 @@ class EventController extends Controller
         else{
                 $data['image'] = "perfil.png";
             
+        }
+        if($request->addprices == "null"){
+            $data['addprices'] = null;
         }
 
         Teacher::findorFail($request->id)->update($data);

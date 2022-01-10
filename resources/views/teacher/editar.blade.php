@@ -9,8 +9,7 @@
 @method('PUT')
     <div class="form-group">
         <label for="image">Foto:</label><br>
-        <input type="file" class="form-control-file" id="image" name="image">
-        <img src="/img/teachers/{{ $teacher->image }}" alt="{{ $teacher->name }}" class="img-preview">
+        <p style="color: red;">Devido ao host não manter os arquivos enviados pelo usuário, essa função foi desativada, lamentamos o ocorrido.</p>
     </div>
 
     <div class="form-group">
@@ -35,12 +34,15 @@
     </div>
     
     <div class="form-group">
-        <label for="teacher">Valores adicionais: (Opcional)</label>
+        <label for="teacher">Valores adicionais:</label>
         <div class="form-group">
             <input type="checkbox" name="addprices[]" value="Custo de transporte"> Custo de transporte 
         </div>
         <div class="form-group">
             <input type="checkbox" name="addprices[]" value="Alimentação"> Custo de alimentação 
+        </div>
+        <div class="form-group">
+            <input type="checkbox" name="addprices[]" value="null"> Sem custos adicionais
         </div>
     </div>
 
@@ -109,7 +111,7 @@
     </div>
     
     <div class="form-group">
-        <label for="teacher">Sobre mim e descrição da aula: (O que achar relevante)</label>
+        <label for="teacher">Sobre | Descrição da metodologia | Redes sociais: (O que achar relevante)</label>
         <textarea name="biography" id="biography" class="form-control" placeholder="">{{ $teacher->biography }}</textarea>
     </div>
   

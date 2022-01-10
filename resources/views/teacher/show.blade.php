@@ -11,7 +11,7 @@
                 <h1> {{ $teacher->name }} @auth @if(Auth::user()->id == $teacher->user_id)<a href="/teacher/editar/{{ $teacher->id }}"> <ion-icon name="brush-sharp" style="font-size: 28px; color: black;"></ion-icon></a>@endif @endauth</h1>
                 <p class="teacher-price"><ion-icon name="pricetags-outline"></ion-icon> R${{ $teacher->prices }} por aula
                 @foreach($teacher->addprices as $add)
-                @if($add != NULL)
+                @if($add != "null")
                     + {{$add}}
                 @endif
                 @endforeach
