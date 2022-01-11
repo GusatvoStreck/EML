@@ -222,8 +222,8 @@ footer p{
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,.125);
     text-align: center;
-    width: 15%;
-    height: 300px;
+    width: 25%;
+    height: 400px;
 }
 
 .module-name{
@@ -231,21 +231,21 @@ footer p{
     margin: 5px;
     background-color: #c07e03;
     border-radius: 9px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
     margin-bottom: 10px;
 }
 
 .modules-content{
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0;
+    font-size: 18px;
 }
 
 .modules-link{
     text-decoration: none;
-    color: #353E48;
-    font-weight: 500;
+    color: black;
 }
 
 .modules-link:hover{

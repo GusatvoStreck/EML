@@ -2,7 +2,7 @@
 @section('title', 'Modulos')
 @section('content')
 
-<div id="modules-container">
+<div id="modules-container" class="offset-md-2">
     <div class="card col-md-12">
         <div class="module-name">Básico</div>
         <a href="/modulos/musica" class="modules-link"><div class="modules-content">O que é música?</div></a>
