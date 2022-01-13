@@ -22,12 +22,12 @@ class EventController extends Controller
 
         if($search){
             $teachers = Teacher::where([
-                ['city', 'like', '%'.$search.'%']
+                ['city', 'ILIKE', '%'.$search.'%']
 
             ])->get();
             if(count($teachers)==0){
                 $teachers = Teacher::where([
-                ['instruments', 'like', '%'.$search.'%']
+                ['instruments', 'ILIKE', '%'.$search.'%']
 
             ])->get();
             if($teachers == "Violão"){
