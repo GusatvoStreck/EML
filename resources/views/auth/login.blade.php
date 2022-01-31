@@ -30,16 +30,9 @@
                     <x-jet-checkbox id="remember_me" name="remember" />
                     <span class="ml-2 text-sm text-gray-600">{{ __('Lembrar do login') }}</span>
                 </label>
-            </div>
+</div>
 
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Esqueceu a senha?') }}
-                    </a>
-                @endif
-
-                <x-jet-button class="ml-4">
+                <x-jet-button class="ml-4" style="margin-left:77%;">
                     {{ __('Entrar') }}
                 </x-jet-button>
             </div>

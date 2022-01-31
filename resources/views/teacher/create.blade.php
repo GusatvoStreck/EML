@@ -40,9 +40,6 @@
         <div class="form-group">
             <input type="checkbox" name="addprices[]" value="Alimentação"> Custo de alimentação 
         </div>
-        <div class="form-group">
-            <input type="checkbox" name="addprices[]" value="null"> Sem custos adicionais
-        </div>
     </div>
 
     <div class="form-group">

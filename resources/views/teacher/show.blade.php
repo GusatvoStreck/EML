@@ -10,11 +10,13 @@
             <div id="info-container" class="col-md-6">
                 <h1> {{ $teacher->name }} @auth @if(Auth::user()->id == $teacher->user_id)<a href="/teacher/editar/{{ $teacher->id }}"> <ion-icon name="brush-sharp" style="font-size: 28px; color: black;"></ion-icon></a>@endif @endauth</h1>
                 <p class="teacher-price"><ion-icon name="pricetags-outline"></ion-icon> R${{ $teacher->prices }} por aula
+                @if($teacher->addprices != "null")
                 @foreach($teacher->addprices as $add)
                 @if($add != "null")
                     + {{$add}}
                 @endif
                 @endforeach
+                @endif
                 </p>
                 <p class="teacher-city"><ion-icon name="location-outline"></ion-icon>   {{ $teacher->city }} - {{ $teacher->state }}</p>
                 <p class="teacher-class">
@@ -35,10 +37,10 @@
                 </ul>
             </p>
             </div>
-            <div class="col-md-3">
-
+           <div class="col-md-3 offset-md-3">
+            <p class="teacher-email"><ion-icon name="mail-outline"></ion-icon> {{ $teacherId['email'] }} </p>
             </div>
-            <div class="col-md-3" id="description-container">
+            <div class="col-md-6 offset-md-3" id="description-container">
                 <h3>Sobre o professor(a):</h3>
                 <p class="teacher-description">{{ $teacher->biography }}</p>
             </div>

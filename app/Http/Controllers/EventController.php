@@ -30,7 +30,7 @@ class EventController extends Controller
                 ['instruments', 'ILIKE', '%'.$search.'%']
 
             ])->get();
-            if($teachers == "Violão"){
+            if($teachers == "Violão" || $teachers == "violão"){
                 $teachers = "Violao";
             }    
         }}
@@ -67,8 +67,8 @@ class EventController extends Controller
             $teacher->biography = $request->biography;
         }
         //addprices null
-        if($request->addprices == "null"){
-            $teacher->addprices = null;
+        if($request->addprices == null){
+            $teacher->addprices = "null";
         }
         else{
             $teacher->addprices = $request->addprices;
@@ -109,15 +109,24 @@ class EventController extends Controller
     // Show
     public function show($id){
         $teacher = Teacher::findorFail($id);
+
+        $teacherName = User::where('id', $teacher->user_id)->first()->toArray();
         
-        return view('teacher.show', ['teacher' => $teacher, 'teachers2' => Teacher::all(), 'users2' => User::all()]);
+        return view('teacher.show', ['teacher' => $teacher, 'teacherId' => $teacherName]);
+
+    }
+
+    public function showUser($id){
+        $user = User::findorFail($id);
+        
+        return view('teacher.show', ['teacher' => $teacher, 'teacherId' => $teacherName]);
 
     }
 
     public function destroy($id){
         Teacher::findorFail($id)->delete();
 
-        return redirect('/')->with('msg', 'Perfil excluido com sucesso');
+        return redirect('/');
     }
 
     public function edit($id){
